@@ -1,25 +1,12 @@
+
+# CodSoft Machine Learning Internship
 ## 🔗 Connect With Me
 - 💼 [LinkedIn](https://www.linkedin.com/in/sajna-b-bhandary-226713310)
-- 🐙 [GitHub](https://github.com/sajna567)
-# 🤖 CodSoft Machine Learning Internship
 
-Welcome to my **CodSoft Machine Learning Internship** repository! 🚀  
+---
+
+Welcome to my **CodSoft Machine Learning Internship** repository!   
 This repo contains all the tasks I completed during the internship, showcasing my skills in data preprocessing, model building, and evaluation using Python, scikit-learn, TensorFlow, and other ML libraries.
-
----
-
-## 📌 About CodSoft
-CodSoft is a vibrant community that empowers learners through internships, mentorship, and collaborative projects.  
-The Machine Learning internship focuses on building practical ML solutions and gaining hands-on experience with real-world datasets.
-
----
-
-## 📝 Internship Instructions
-- Complete at least **3 tasks** ✅ for successful completion.  
-- Maintain a separate GitHub repository named **CODSOFT**.  
-- Share the repo link in the task submission form (provided via email).  
-- Create a demo video 🎥 for each task and post it on LinkedIn with hashtags:  
-  `#codsoft #internship #machinelearning`
 
 ---
 
@@ -49,21 +36,3 @@ Classify SMS messages as spam or legitimate using TF-IDF or word embeddings with
 Implement a character-level RNN to generate handwritten-like text. Train the model on handwriting datasets and generate new text sequences.
 
 ---
-
-## 🏆 Completion Benefits
-- 📜 Internship Completion Certificate  
-- 💼 Placement Support  
-- 🌐 Networking Opportunities  
-
----
-
-## 🔗 Connect
-- 🌍 [CodSoft Website](https://www.codsoft.in)  
-- 📧 contact@codsoft.in  
-- 💼 LinkedIn: [CodSoft](https://www.linkedin.com/company/codsoft)
-
----
-
-## 🎯 Final Note
-This internship was a great opportunity to **learn, grow, and apply ML concepts** to practical problems.  
-Feel free to explore the tasks and projects in this repository! ✨
