@@ -1,43 +1,49 @@
 # 💳 Credit Card Fraud Detection
 
-This project is part of my **CodSoft Machine Learning Internship**.  
-The goal is to build a machine learning model that can detect fraudulent credit card transactions using real-world datasets.
+## 📌 Overview
+This project implements a machine learning pipeline to detect fraudulent credit card transactions.  
+It leverages **Logistic Regression, Decision Tree, and Random Forest** models, with Random Forest achieving the best performance.
 
 ---
 
-## 📌 Project Overview
-Credit card fraud is a major challenge in the financial industry.  
-By analyzing transaction data, we can classify whether a transaction is **fraudulent** or **legitimate**.  
-This project demonstrates how machine learning can be applied to improve security and reduce financial losses.
+## 📊 Dataset
+- **Training Data:** `fraudtrain.csv`  
+- **Testing Data:** `fraudtest.csv`
+---
+
+## ⚙️ Workflow
+1. **Data Preprocessing**
+   - Dropped irrelevant columns (`trans_date_trans_time`, `unix_time`, `first`, `last`, etc.)
+   - Encoded categorical variables into numerical codes
+   - Standardized features using `StandardScaler`
+
+2. **Handling Class Imbalance**
+   - Applied **SMOTE** to balance fraud vs legitimate transactions
+
+3. **Model Training**
+   - Logistic Regression → Accuracy: **85.30%**
+   - Decision Tree → Accuracy: **96.24%**
+   - Random Forest → Accuracy: **96.29%** ✅ (Best Model)
+
+4. **Evaluation**
+   - Confusion Matrix (Random Forest)
+   - Classification Report (Precision, Recall, F1-score)
+   - ROC Curve & AUC (~0.96)
+
+5. **Prediction**
+   - Final predictions saved to `fraud_predictions.csv`
 
 ---
 
-## 🛠️ Techniques & Tools
-- **Languages & Libraries**: Python 🐍, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn  
-- **Algorithms**: Logistic Regression, Decision Trees, Random Forests 🌲  
-- **Methods**: Data preprocessing, feature scaling, model training, evaluation with metrics (accuracy, precision, recall, F1-score)
+## 🧠 Tech Stack
+- **Languages:** Python 🐍  
+- **Libraries:**  
+  - Data: `pandas`, `numpy`  
+  - Visualization: `matplotlib`, `seaborn`  
+  - ML Models: `scikit-learn`  
+  - Imbalance Handling: `imblearn`  
 
 ---
 
-## 📂 Dataset
-The dataset contains anonymized credit card transactions with labels indicating fraud or legitimate activity.  
-👉 [Dataset Link](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) *(commonly used dataset)*
 
----
-
-## 📊 Workflow
-1. **Data Exploration** 🔍 – Understand dataset structure and distribution.  
-2. **Preprocessing** 🧹 – Handle missing values, scale features, balance classes (SMOTE).  
-3. **Model Training** ⚙️ – Train multiple classifiers and tune hyperparameters.  
-4. **Evaluation** 📈 – Compare models using confusion matrix, ROC curve, and classification report.  
-5. **Prediction** 🎯 – Deploy model to predict fraud in new transactions.
-
----
-
-## 📌 Results
-- Achieved high recall to minimize false negatives (critical in fraud detection).  
-- Random Forest performed best with balanced accuracy and precision.  
-- Visualizations include ROC curve and confusion matrix for model comparison.
-
----
 
