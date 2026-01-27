@@ -1,53 +1,54 @@
-# ✍️ Handwritten Text Generation
+ # ✍️ Handwritten Text Generation
 
 ## 📌 Overview
-This project focuses on generating **handwritten-style text** using deep learning techniques.  
-The goal is to train a model that can learn handwriting patterns and generate realistic handwritten text images from digital input.
+This project demonstrates generating **handwritten-style text** using deep learning.  
+It leverages the **IAM Handwriting Dataset** and trains a **Recurrent Neural Network (RNN with LSTM)** to learn character-level sequences and generate realistic handwritten text outputs.
 
 ---
 
 ## 📊 Dataset
-- **Dataset Used:** IAM Handwriting Database (or any handwriting dataset you specify)  
-- **Content:** Images of handwritten text with corresponding labels  
-- **Preprocessing:**  
-  - Normalization of images  
-  - Resizing to fixed dimensions  
-  - Encoding text sequences  
+- **Dataset Used:** [IAM Handwriting Dataset (Teklia/IAM-line)](https://huggingface.co/datasets/Teklia/IAM-line)  
+- **Splits:**  
+  - Train: 6,482 samples  
+  - Validation: 976 samples  
+  - Test: 2,915 samples  
+- **Features:**  
+  - `image` → Handwritten text image  
+  - `text` → Corresponding transcription  
 
 ---
 
 ## ⚙️ Workflow
-1. **Data Preprocessing**
-   - Load and clean handwriting dataset  
-   - Convert text labels into sequences  
-   - Normalize and resize images  
+1. **Data Loading**
+   - HuggingFace `datasets` library used to load IAM dataset  
+   - Images and text pairs extracted  
 
-2. **Model Architecture**
-   - Convolutional Neural Networks (CNNs) for feature extraction  
-   - Recurrent Neural Networks (RNNs / LSTMs / GRUs) for sequence modeling  
-   - Connectionist Temporal Classification (CTC) loss for training  
+2. **Preprocessing**
+   - Character-level tokenization  
+   - Sequence padding  
+   - One-hot encoding of labels  
 
-3. **Training**
+3. **Model Architecture**
+   - Embedding Layer (128 dimensions)  
+   - LSTM Layer (256 units)  
+   - Dense Output Layer with Softmax activation  
+
+4. **Training**
    - Optimizer: Adam  
-   - Loss Function: CTC Loss  
-   - Epochs: Configurable based on dataset size  
-
-4. **Evaluation**
-   - Character Error Rate (CER)  
-   - Word Error Rate (WER)  
-   - Visual inspection of generated handwritten text  
-
-5. **Generation**
-   - Input: Digital text string  
-   - Output: Handwritten-style image of the text  
+   - Loss: Categorical Crossentropy  
+   - Epochs: 20  
+   - Batch Size: 128  
 
 ---
 
 ## 🧠 Tech Stack
 - **Languages:** Python 🐍  
 - **Libraries:**  
-  - `TensorFlow` / `PyTorch`  
-  - `NumPy`, `Pandas`  
-  - `Matplotlib`, `Seaborn`  
+  - `TensorFlow / Keras`  
+  - `HuggingFace Datasets`  
+  - `Matplotlib`, `NumPy`  
+  - `PIL` (for rendering handwritten text images)  
 
 ---
+
+
