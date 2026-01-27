@@ -1,37 +1,61 @@
 # 📉 Customer Churn Prediction
 
-This project is part of my **CodSoft Machine Learning Internship**.  
-The objective is to build a machine learning model that predicts whether a customer is likely to leave (churn) based on historical data.
+## 📌 Overview
+This project predicts whether a bank customer is likely to **churn (leave the service)** using machine learning models.  
+It applies **Logistic Regression, Random Forest, and Gradient Boosting**, with **Gradient Boosting delivering the best accuracy (~87%)**.
 
 ---
 
-## 📌 Project Overview
-Customer churn is a critical challenge for subscription‑based businesses.  
-By analyzing customer behavior and demographics, we can identify patterns that indicate churn risk and take proactive measures to retain customers.
+## 📊 Dataset
+- **Dataset Used:** [Bank Customer Churn Prediction – Kaggle](https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction)  
+- **File Name:** `Churn_Modelling.csv`  
+- **Rows:** 10,000 customers  
+- **Target Variable:** `Exited` (1 = churn, 0 = retained)  
+- **Features:**  
+  - CreditScore  
+  - Geography  
+  - Gender  
+  - Age  
+  - Tenure  
+  - Balance  
+  - NumOfProducts  
+  - HasCrCard  
+  - IsActiveMember  
+  - EstimatedSalary  
 
 ---
 
-## 🛠️ Techniques & Tools
-- **Languages & Libraries**: Python 🐍, Pandas, NumPy, scikit-learn, Matplotlib, Seaborn  
-- **Algorithms**: Logistic Regression, Random Forests 🌲, Gradient Boosting  
-- **Methods**: Data preprocessing, feature engineering, scaling, model training, evaluation with metrics (accuracy, precision, recall, F1-score)
+## ⚙️ Workflow
+1. **Data Preprocessing**
+   - Dropped irrelevant columns (`RowNumber`, `CustomerId`, `Surname`)
+   - Encoded categorical variables (`Geography`, `Gender`) using `LabelEncoder`
+   - Standardized numerical features with `StandardScaler`
+
+2. **Handling Class Imbalance**
+   - Applied **SMOTE** to oversample minority class (churned customers)
+
+3. **Model Training**
+   - Logistic Regression  
+   - Random Forest  
+   - Gradient Boosting ✅ (Best Model)
+
+4. **Evaluation**
+   - Accuracy, Precision, Recall, F1-score  
+   - Confusion Matrix  
+   - ROC Curve & AUC  
+
+5. **Prediction**
+   - Predict churn for new customers with probability scores
 
 ---
 
-## 📂 Dataset
-The dataset contains customer information such as demographics, usage behavior, and subscription details.  
-👉 [Dataset Link](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) *(commonly used dataset)*
+## 🧠 Tech Stack
+- **Languages:** Python 🐍  
+- **Libraries:**  
+  - Data: `pandas`, `numpy`  
+  - Visualization: `matplotlib`, `seaborn`  
+  - ML Models: `scikit-learn`  
+  - Imbalance Handling: `imblearn`  
 
 ---
 
-## 📊 Workflow
-1. **Data Exploration** 🔍 – Inspect dataset, visualize churn distribution.  
-2. **Preprocessing** 🧹 – Handle missing values, encode categorical features, scale numerical features.  
-3. **Model Training** ⚙️ – Train multiple classifiers and tune hyperparameters.  
-4. **Evaluation** 📈 – Compare models using confusion matrix, ROC curve, and classification report.  
-5. **Prediction** 🎯 – Deploy model to predict churn for new customers.
-
----
-
-## 📌 Results
-- Achieved strong recall to minimize false negatives (important for churn
