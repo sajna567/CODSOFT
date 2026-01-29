@@ -1,5 +1,11 @@
 # 📉 Customer Churn Prediction
 
+## 🔗 Project Showcase  
+
+This project was part of my **Codsoft Machine Learning Internship – Task 3: Customer Churn Prediction**.  
+I have shared my work on LinkedIn for professional visibility:  
+[LinkedIn Showcase Post](https://www.linkedin.com/posts/sajna-b-bhandary-226713310_codsoft-machinelearninginternship-customerchurnprediction-activity-7422655587416657921-yOkW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8gun4BwCSz3Zc5Yua4aZBFSiAFyU1oCpQ)
+
 ## 📌 Overview
 This project predicts whether a bank customer is likely to **churn (leave the service)** using machine learning models.  
 It applies **Logistic Regression, Random Forest, and Gradient Boosting**, with **Gradient Boosting delivering the best accuracy (~87%)**.
