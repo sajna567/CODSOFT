@@ -1,5 +1,12 @@
 # 💳 Credit Card Fraud Detection
 
+## 🔗 Project Showcase  
+
+This project was part of my **Codsoft Machine Learning Internship – Task 2: Credit Card Fraud Detection**.  
+I have shared my work on LinkedIn for professional visibility:  
+[LinkedIn Showcase Post](https://www.linkedin.com/posts/sajna-b-bhandary-226713310_codsoft-machinelearninginternship-creditcardfrauddetection-activity-7422653991513341952-lGMW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8gun4BwCSz3Zc5Yua4aZBFSiAFyU1oCpQ)
+
+
 ## 📌 Overview
 This project implements a machine learning pipeline to detect fraudulent credit card transactions.  
 It leverages **Logistic Regression, Decision Tree, and Random Forest** models, with Random Forest achieving the best performance.
