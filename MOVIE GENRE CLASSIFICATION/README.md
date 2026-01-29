@@ -1,5 +1,11 @@
 # 🎬 Movie Genre Classification App
 
+## 🔗 Project Showcase  
+
+This project was part of my **Codsoft Machine Learning Internship – Task 1: Movie Genre Prediction**.  
+I have shared my work on LinkedIn for professional visibility:  
+[LinkedIn Showcase Post](https://www.linkedin.com/posts/sajna-b-bhandary-226713310_codsoft-internship-machinelearning-activity-7422643820657496066-37KI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8gun4BwCSz3Zc5Yua4aZBFSiAFyU1oCpQ)
+
 ## 📌 Overview
 This project is a **Streamlit web application** that predicts the **genre of a movie** based on its plot description.  
 It uses **Natural Language Processing (NLP)** techniques with **TF-IDF vectorization** and a **Logistic Regression model** to classify movie plots into genres.
