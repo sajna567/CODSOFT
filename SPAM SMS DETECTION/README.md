@@ -7,14 +7,14 @@ It leverages **TF-IDF vectorization** and a **Logistic Regression model** to cla
 ---
 
 ## 📊 Dataset
-- **Dataset Used:** `spam.csv`  
+- **Dataset Used:** `spam.csv` (SMS Spam Collection Dataset)  
 - **Columns:**  
-  - `v1` → Label (`ham` or `spam`)  
-  - `v2` → Message text  
+  - `label` → Message category (`ham` or `spam`)  
+  - `message` → SMS text content  
 - **Preprocessing:**  
-  - Renamed columns to `label` and `message`  
   - Converted labels: `ham = 0`, `spam = 1`  
   - Lowercased all messages  
+  - Removed unused/unnamed columns if present  
 
 ---
 
@@ -52,5 +52,3 @@ It leverages **TF-IDF vectorization** and a **Logistic Regression model** to cla
 ---
 
 
-# Run the script
-python spam_detection.py
