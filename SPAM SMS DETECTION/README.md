@@ -1,5 +1,12 @@
 # 📱 Spam SMS Detection
 
+## 🔗 Project Showcase  
+
+This project was part of my **Codsoft Machine Learning Internship – Task 4: SMS Spam Detection**.  
+I have shared my work on LinkedIn for professional visibility:  
+[LinkedIn Showcase Post](https://www.linkedin.com/posts/sajna-b-bhandary-226713310_codsoft-machinelearninginternship-smsspamdetection-activity-7422656769975435265-kbVo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8gun4BwCSz3Zc5Yua4aZBFSiAFyU1oCpQ)
+
+
 ## 📌 Overview
 This project detects whether an SMS message is **spam** or **ham (legitimate)** using machine learning techniques.  
 It leverages **TF-IDF vectorization** and a **Logistic Regression model** to classify SMS messages with high accuracy.
