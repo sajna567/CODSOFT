@@ -1,4 +1,10 @@
  # ✍️ Handwritten Text Generation
+ 
+ ## 🔗 Project Showcase  
+
+This project was part of my **Codsoft Machine Learning Internship – Task 5: Handwritten Text Generation**.  
+I have shared my work on LinkedIn for professional visibility:  
+[LinkedIn Showcase Post](https://www.linkedin.com/posts/sajna-b-bhandary-226713310_codsoft-machinelearninginternship-handwrittentextgeneration-activity-7422657870137188352-X0EV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE8gun4BwCSz3Zc5Yua4aZBFSiAFyU1oCpQ)
 
 ## 📌 Overview
 This project demonstrates generating **handwritten-style text** using deep learning.  
